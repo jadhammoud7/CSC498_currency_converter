@@ -22,7 +22,7 @@
         app:srcCompat="@drawable/converter" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/usd"
         android:layout_width="219dp"
         android:layout_height="60dp"
         android:layout_marginStart="47dp"
@@ -32,13 +32,13 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Enter USD"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName4"
+        app:layout_constraintBottom_toTopOf="@+id/lbp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName4"
+        android:id="@+id/lbp"
         android:layout_width="220dp"
         android:layout_height="63dp"
         android:layout_marginStart="46dp"
@@ -51,6 +51,36 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
+        app:layout_constraintTop_toBottomOf="@+id/usd" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="118dp"
+        android:layout_height="124dp"
+        app:srcCompat="@drawable/lbp"
+        tools:layout_editor_absoluteX="277dp"
+        tools:layout_editor_absoluteY="410dp" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="136dp"
+        android:layout_height="88dp"
+        app:srcCompat="@drawable/dollar"
+        tools:layout_editor_absoluteX="277dp"
+        tools:layout_editor_absoluteY="299dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="79dp"
+        android:layout_marginBottom="105dp"
+        android:background="#3089C1"
+        android:onClick="amount"
+        android:text="Check AMount"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
