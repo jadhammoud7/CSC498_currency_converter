@@ -19,14 +19,23 @@ public class MainActivity extends AppCompatActivity {
         lbp = (EditText) findViewById(R.id.lbp);
     }
 
-    public void check_amount(View v) {
+    public void convert_to_dollar(View v) {
         String usd1 = usd.getText().toString();
-        String lbp1 = lbp.getText().toString();
         if(usd1!=null){
             int result=0;
             result=22000*Integer.parseInt(usd1);
             String s=result+"";
             lbp.setText(s);
+        }
+
+    }
+    public void convert_to_lbp(View v) {
+        String lbp1 = lbp.getText().toString();
+        if(lbp1!=null){
+            int result1=0;
+            result1=Integer.parseInt(lbp1)/22000;
+            String s1=result1+"";
+            usd.setText(s1);
         }
 
     }
