@@ -87,7 +87,7 @@
         android:layout_marginTop="79dp"
         android:layout_marginBottom="105dp"
         android:background="#3089C1"
-        android:onClick="amount"
+        android:onClick="check_amounr"
         android:text="Check AMount"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
