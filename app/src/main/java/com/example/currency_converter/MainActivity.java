@@ -22,16 +22,11 @@ public class MainActivity extends AppCompatActivity {
     public void check_amount(View v) {
         String usd1 = usd.getText().toString();
         String lbp1 = lbp.getText().toString();
-        if (usd1 != null && lbp1 == null) {
-            int result = 0;
-            result = 22000 * Integer.parseInt(usd1);
-            Toast.makeText(getApplicationContext(), result, Toast.LENGTH_SHORT).show();
-            lbp.setText(result);
-        } else {
-            int result1 = 0;
-            result1 = Integer.parseInt(lbp1) / 22000;
-            usd.setText(result1);
-
+        if(usd1!=null){
+            int result=0;
+            result=22000*Integer.parseInt(usd1);
+            String s=result+"";
+            lbp.setText(s);
         }
 
     }
